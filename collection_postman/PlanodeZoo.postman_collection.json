@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "591ddc70-7865-4fbe-939f-a83d801272b8",
+		"name": "PlanodeZoo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"visitor\",\r\n    \"password\" : \"test\",\r\n    \"role\" : \"visitor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/createUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"createUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"julien\",\r\n    \"password\" : \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "open zoo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/zoo/canZooOpen/monday",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zoo",
+						"canZooOpen",
+						"monday"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MDW",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/adminArea",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"adminArea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "open zoo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/zoo/canZooOpen/monday",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zoo",
+						"canZooOpen",
+						"monday"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuser data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/getUser/nax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"getUser",
+						"nax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"nax2\",\r\n    \"password\" : \"newPassword\",\r\n    \"role\" : \"veterinarian\",\r\n    \"assignedDays\" : [\"tuesday\", \"wednesday\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/updateUser/649befb361a8363c0284ee3b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"updateUser",
+						"649befb361a8363c0284ee3b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/deleteUser/649befb361a8363c0284ee3b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"deleteUser",
+						"649befb361a8363c0284ee3b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create ticket",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDliZDNjODVhNGQzMWQzNzE5ZGY4MjkiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODc5NjExNTUsImV4cCI6MTY4ODA0NzU1NX0.vehVZlCVZO1oSFUycYfxYl0N7u5ymjScR2etm_JZZB8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"PASS journée\",\r\n    \"userId\": \"649c293b8c66086e2196cd5c\",\r\n    \"allowedSpaces\": [\"649c339aba4f74e2e6740302\", \"649c33b6ba4f74e2e6740304\", \"649c33e6ba4f74e2e6740306\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/tickets/createTicket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tickets",
+						"createTicket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Space",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDgxZDc4MzZkNDAyMWVkMjFhYWVjMzYiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODc5MzM5NzIsImV4cCI6MTY4ODAyMDM3Mn0._K3xAfx9xHN7YHj8JUJfOB5QsS3JaeBnaR_OJi5yiAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Safari\",\r\n    \"description\" : \"Animaux de la savane\",\r\n    \"images\" : \"http://google.com\",\r\n    \"type\" : \"Afrique\",\r\n    \"capacity\" : 100,\r\n    \"duration\" : 2,\r\n    \"openingHours\" : \"12h à 16h\",\r\n    \"handicappedAccess\" : true,\r\n    \"status\" : true,\r\n    \"lastMaintenance\" : \"Wed Jun 28 2023 12:24:37 GMT+0200 (heure d’été d’Europe centrale)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/spaces/createspace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"spaces",
+						"createspace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create PASS 1daymonth",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDliZDNjODVhNGQzMWQzNzE5ZGY4MjkiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODc5NjExNTUsImV4cCI6MTY4ODA0NzU1NX0.vehVZlCVZO1oSFUycYfxYl0N7u5ymjScR2etm_JZZB8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"PASS 1daymonth\",\r\n    \"userId\": \"649c293b8c66086e2196cd5c\",\r\n    \"allowedSpaces\": [\"649c339aba4f74e2e6740302\", \"649c33b6ba4f74e2e6740304\", \"649c33e6ba4f74e2e6740306\"],\r\n    \"validUntil\": \"2023-12-31T00:00:00Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/tickets/createTicket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tickets",
+						"createTicket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "number ticket from space",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/tickets/count-by-space",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tickets",
+						"count-by-space"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "daily count ticket for space",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/tickets/daily-count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tickets",
+						"daily-count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weekly count ticket for space",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/tickets/weekly-count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tickets",
+						"weekly-count"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

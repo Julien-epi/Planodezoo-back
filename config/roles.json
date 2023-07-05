@@ -1,0 +1,42 @@
+{
+  "admin": {
+    "allowedRoutes": [
+      "/adminArea",
+      "/veterinarianArea",
+      "/accueilAgentArea",
+      "/entretienAgentArea",
+      "/sellerArea",
+      "/createUsers"
+    ]
+  },
+  "accueilAgent": {
+    "allowedRoutes": [
+      "/accueilAgentArea",
+      "/createUsers"
+    ]
+  },
+  "veterinarian": {
+    "allowedRoutes": [
+      "/veterinarianArea",
+      "/createUsers"
+    ]
+  },
+  "entretienAgent": {
+    "allowedRoutes": [
+      "/entretienAgentArea",
+      "/createUsers"
+    ]
+  },
+  "seller": {
+    "allowedRoutes": [
+      "/sellerArea",
+      "/createUsers"
+    ]
+  },
+  "visitor": {
+    "allowedRoutes": [
+      "/userArea",
+      "/createUsers"
+    ]
+  }      
+}
