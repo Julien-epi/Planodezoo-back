@@ -4,15 +4,14 @@ import cors from "cors";
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
 
-
 import userRoutes from './routes/user.routes';
 import zooRoutes from './routes/zoo.routes';
-import spaceRoutes from "./Routes/spaces.routes";
+import spaceRoutes from "./routes/spaces.routes";
 import servicebookRoutes from "./routes/servicebook.routes";
 import ticketRoutes from "./routes/ticket.routes";
 import treatmentRoutes from "./routes/treatment.routes";
-import animalRoutes from "./Routes/animal.routes";
-import Database from "./Config/database";
+import animalRoutes from "./routes/animal.routes";
+import Database from "./config/database";
 import checkticketsRoutes from "./routes/checktickets.routes";
 
 class Server {

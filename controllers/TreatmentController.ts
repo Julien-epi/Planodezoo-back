@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Treatment from '../Models/treatment';
+import Treatment from '../models/treatment';
 import { ITreatment } from '../interfaces/Treatment';
 
 class TreatmentController {
